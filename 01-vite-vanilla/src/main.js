@@ -1,7 +1,6 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
+import './styles/style.css'
+import javascriptLogo from './assets/javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -16,9 +15,7 @@ document.querySelector('#app').innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Secuencia de autodestrucción 04-24-220-sa
+      Secuencia de autodestrucción 04-24-220-sa-3213213
     </p>
   </div>
 `
-
-setupCounter(document.querySelector('#counter'))
