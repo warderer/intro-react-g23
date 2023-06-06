@@ -1,7 +1,11 @@
-const TodoItem = () => {
+const TodoItem = ({todo, handleDelete}) => {
   return (
-    <li>Comprar despensa
-        <button>Eliminar</button>
+    <li>{todo}
+      <button
+        className='delete-button'
+        onClick={handleDelete}
+      >Eliminar
+      </button>
     </li>
   )
 }
