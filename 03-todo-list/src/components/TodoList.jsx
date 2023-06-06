@@ -1,4 +1,6 @@
 import { useState } from "react"
+import TodoItem from "./TodoItem"
+
 
 const TodoList = () => {
     const [inputValue, setInputValue] = useState('')
@@ -15,15 +17,7 @@ const TodoList = () => {
       <input type='text' value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
       <button onClick={handleAddItem}>Agregar</button>
       <ul>
-        <li>Comprar despensa
-            <button>Eliminar</button>
-        </li>
-        <li>Lavar ropa
-            <button>Eliminar</button>
-        </li>
-        <li>Pasear al perro
-            <button>Eliminar</button>
-        </li>
+        <TodoItem />
       </ul>
     </div>
     
